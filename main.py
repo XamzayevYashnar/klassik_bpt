@@ -140,7 +140,7 @@ async def send_daily_report():
             if user_chat_id:
                 await bot.send_message(chat_id=user_chat_id, text=f"❌ Xatolik yuz berdi:\n<code>{e}</code>")
 
-        await asyncio.sleep(5)  # Aslida 86400 (24 soat), test uchun 5 soniya
+        await asyncio.sleep(86400)  # Aslida 86400 (24 soat), test uchun 5 soniya
 
 # === Bot ishga tushadigan asosiy funksiya ===
 async def main():
